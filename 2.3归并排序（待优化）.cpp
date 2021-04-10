@@ -12,8 +12,7 @@ int main()
 	int p=0;                          //前半段数组长度 
 	int q=0;                          //后半段数组长度 
 	p=a_length/2;
-	q=a_length/2;
-	if(a_length%2)q++;
+	q=a_length-p;
 	zaifen(a,p,q);
 	bijiao(a,p,q);
 	for(int i=0;i<a_length;i++)cout<<a[i]<<endl;
@@ -27,8 +26,7 @@ int main()
  	if(p>3)                          //递归再分数组为不可再分数组 
 	 {
  		p1=p/2;
- 		q1=p/2;
- 		if(p%2)q1++;
+ 		q1=p-p1;
  		zaifen(c,p1,q1);
  		bijiao(c,p1,q1);
  	} else
@@ -50,8 +48,7 @@ int main()
  	if(q>3)
 	 { 
  		p2=q/2;
- 		q2=q/2;
- 		if(q%2)q2++;
+ 		q2=q-p2;
  		zaifen(&c[p],p2,q2);
  		bijiao(&c[p],p2,q2);
 	 } else                             //对不可再分数组排序 
