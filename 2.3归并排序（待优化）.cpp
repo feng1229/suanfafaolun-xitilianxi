@@ -7,7 +7,7 @@ void zaifen(int *,int,int);
 void bijiao(int *,int,int);
 int main()
 {
-	int a[]={5,6,7,11,25,45,14,2,65,9,44};
+	int a[]={5,6,7,11,25,45,14,2,65,9,44,1};
 	int a_length=sizeof(a)/sizeof(a[0]);
 	int p=0;                          //前半段数组长度 
 	int q=0;                          //后半段数组长度 
